@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+    </div>
+    <script>
+       
+        function addColors(colors){
+            var mainDiv=document.getElementById("demo")
+            colors.forEach(color => {
+            var div=document.createElement("div")  
+            console.log(color)
+            div.style.background=color    
+            div.style.height="100px";
+            div.style.width="100px"
+            mainDiv.appendChild(div)
+            });
+        }
+        const colors = ['red', 'green', 'blue', 'yellow'];
+        addColors(colors)
+    </script>
+</body>
+</html>
